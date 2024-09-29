@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Cover</title>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(/assets/background\ 1.jpg);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .invitation-card {
+            width: 100%;
+            max-width: 400px;
+            background-color: #D6A45E;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .flower-image {
+            width: 50%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        .flower-image2 {
+            width: 50%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+            rotate: 180deg;
+            margin-left: 200px;
+            margin-top: 32px;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            color: #75512D;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 0;
+            color: white;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 5px;
+            font-family: 'Allura', cursive;
+            color: #FFF09A;
+        }
+        h3 {
+            font-size: 50px;
+            margin: 20px 0;
+            color: #ffffff;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .button {
+             background-color: #75512d;
+              color: white;
+              border: none;
+              padding: 12px 24px;
+              font-size: 16px;
+              font-family: "Barlow Condensed", sans-serif; 
+              cursor: pointer;
+              border-radius: 8px;
+              transition: transform 0.3s ease, background-color 0.3s ease;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+
+        .button:hover {
+              background-color: #8F7147;
+              transform: scale(1.05);
+        }
+
+        @media (min-width: 768px) {
+            .invitation-card {
+                flex-direction: row;
+                max-width: 800px;
+                height: 500px;
+            }
+            .flower-image {
+                width: 50%;
+                height: 100%;
+                max-height: none;
+            }
+            .content {
+                width: 50%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="invitation-card">
+            <img src="../assets/mawar.png" class="flower-image" alt="Rose">
+            <div class="content">
+                <h1>Undangan</h1>
+                <h2>Pernikahan</h2>
+                <h3>Riki & Dasha</h3>
+                <p>Yth.<br>Bapak, Ibu, Saudara/i<br>yang kami undang</p>
+                <a href="undangan.html"><button class="button">BUKA UNDANGAN</button></a>
+            </div>
+            <img src="../assets/mawar.png" class="flower-image2" alt="Rose">
+        </div>
+    </div>
+</body>
+</html>

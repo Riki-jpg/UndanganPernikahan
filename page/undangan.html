@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riki & Dasha Wedding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="event-details">
+        <h1>Do'a Untuk Kedua Mempelai</h1>
+        <p>بارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
+        <p>"Mudah-mudahan Allah SWT memberkatimu, baik ketika senang maupun susah dan selalu mengumpulkan kamu berdua pada kebaikan." (HR. Abu Daud)</p>
+
+        <div class="couple-info">
+            <div>
+                <img src="../assets/hijab.jpg" alt="Dasha Taran">
+                <h2>Dasha Taran</h2>
+                <p>binti Fatur bin Turah</p>
+            </div>
+            <div>
+                <img src="../assets/Cowok.jpg" alt="Riki Ramadani">
+                <h2>Riki Ramadani</h2>
+                <p>bin Yanto bin Muhamdan</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="event-details">
+            <h2>Akad <span class="allura">Nikah</span></h2>
+            <p>01.12.2030</p>
+            <p>MASJID RAYA SABILAL MUHTADIN </p>
+            <a href="https://maps.app.goo.gl/8UzifsCdx2DzSFRi6"><button class="tombol">OPEN MAPS</button></a>
+        </div>
+
+        <div class="countdown" id="akadCountdown">
+          <div class="countdown-item"><span id="akadDays">00</span><br>HARI</div>
+          <div class="countdown-item"><span id="akadHours">00</span><br>JAM</div>
+          <div class="countdown-item"><span id="akadMinutes">00</span><br>MENIT</div>
+          <div class="countdown-item"><span id="akadSeconds">00</span><br>DETIK</div>
+      </div>
+
+        <div class="event-details">
+            <h2>Resepsi <span class="allura">NIkah</span></h2>
+            <p>02.12.2030</p>
+            <p>GALAXY HOTEL BANJARMASIN</p>
+            <a href="https://maps.app.goo.gl/pZhe3uiBMLMS2RMe6"><button class="tombol">OPEN MAPS</button></a>
+        </div>
+        <div class="countdown" id="resepsiCountdown">
+          <div class="countdown-item"><span id="resepsiDays">00</span><br>HARI</div>
+          <div class="countdown-item"><span id="resepsiHours">00</span><br>JAM</div>
+          <div class="countdown-item"><span id="resepsiMinutes">00</span><br>MENIT</div>
+          <div class="countdown-item"><span id="resepsiSeconds">00</span><br>DETIK</div>
+      </div>
+      <div class="event-details">
+        <h2>GALLERY</h2>
+        <p>"Galeri pernikahan kami menyimpan momen-momen berharga yang kami bagikan dengan keluarga dan teman-teman terdekat. Setiap foto adalah cerita, menggambarkan cinta, kebahagiaan, dan harapan kami di hari yang istimewa. Kami berharap, melalui galeri ini, Anda dapat merasakan kebahagiaan yang kami rasakan saat menyatukan perjalanan hidup kami."</p>
+        <div class="gallery">
+            <img src="../assets/foto 1.jpg" alt="Foto 1">
+            <img src="../assets/foto 2.jpg" alt="Foto 2">
+            <img src="../assets/foto 3.jpg" alt="Foto 3">
+            <img src="../assets/foto 4.jpg" alt="Foto 4">
+            <img src="../assets/foto 5.jpg" alt="Foto 5">
+            <img src="../assets/foto 6.jpg" alt="Foto 6">
+        </div>
+    </div>
+
+    <div class="event-details">
+        <h2>RESERVASI</h2>
+        <p>
+          "Pernikahan kami adalah awal dari perjalanan baru yang penuh cinta dan harapan. Dengan penuh rasa syukur, kami bersatu untuk membangun kehidupan bersama, dikelilingi oleh keluarga dan sahabat tercinta. Setiap momen dalam hari istimewa ini adalah ungkapan komitmen kami untuk saling mencintai, menghargai, dan tumbuh bersama dalam kebersamaan yang abadi."</p>
+        <form class="rsvp-form">
+            <input type="text" placeholder="Nama" required>
+            <input type="tel" placeholder="Nomor HP" required>
+            <input type="text" placeholder="Kehadiran" required>
+            <textarea placeholder="Ucapan"></textarea>
+            <button class="tombol" type="submit">Kirim</button>
+        </form>
+    </div>
+
+    <div class="event-details">
+        <h2>GIFT DIGITAL</h2>
+        <p>Gift digital pada undangan pernikahan adalah opsi praktis bagi para tamu untuk memberikan hadiah secara elektronik melalui platform pembayaran digital, seperti QRIS atau dompet digital. Dengan fitur ini, tamu dapat dengan mudah berkontribusi tanpa harus membawa hadiah fisik, mendukung kemudahan dan kenyamanan dalam memberikan ucapan selamat kepada pasangan yang menikah.</p>
+        <div class="qris">
+        <img src="../assets/qris.jpg" alt="QRIS">
+        <h2>DANA : XXXXXXX<br>BANK BRI : XXXXXXX<br>OVO : XXXXXXX
+        </h2>
+        </div>
+    </div>
+
+        <div class="event-details">
+        <h2>TERIMAKASIH</h2>
+        <h1>Atas Kehadiran & Do'a Restunya</h1>
+        <a href="cover.html"><button class="tombol">KEMBALI</button></a>
+        </div>
+    </div>
+
+    <div class="audio">
+    <audio autoplay loop src="../assets/Music.mp3"></audio>
+    </div>
+
+    <footer>
+        <p>&copy; 2030 Dasha & Riki Wedding</p>
+    </footer>
+    <script>
+      function updateCountdown(endDate, daysId, hoursId, minutesId, secondsId) {
+          const now = new Date().getTime();
+          const distance = endDate - now;
+
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById(daysId).textContent = days.toString().padStart(2, '0');
+          document.getElementById(hoursId).textContent = hours.toString().padStart(2, '0');
+          document.getElementById(minutesId).textContent = minutes.toString().padStart(2, '0');
+          document.getElementById(secondsId).textContent = seconds.toString().padStart(2, '0');
+
+          if (distance < 0) {
+              clearInterval(intervalId);
+              document.getElementById(daysId).textContent = "00";
+              document.getElementById(hoursId).textContent = "00";
+              document.getElementById(minutesId).textContent = "00";
+              document.getElementById(secondsId).textContent = "00";
+          }
+      }
+
+      const akadDate = new Date("2030-12-01T00:00:00").getTime();
+      const resepsiDate = new Date("2030-12-02T00:00:00").getTime();
+
+      setInterval(() => {
+          updateCountdown(akadDate, "akadDays", "akadHours", "akadMinutes", "akadSeconds");
+          updateCountdown(resepsiDate, "resepsiDays", "resepsiHours", "resepsiMinutes", "resepsiSeconds");
+      }, 1000);
+  </script>
+</body>
+</html>
